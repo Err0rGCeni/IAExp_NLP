@@ -44,4 +44,10 @@ Trilha Processamento de Linguagem Natural
 - **Dependecy Parsing**: Técnica para identificar as relações gramaticais entre palavras em uma sentença.
   - `displacy.render(my_doc, style="dep", jupyter=True, options={"distance": 90})`
 - **Global Vectors for Word Representation (GloVe)**: Algoritmo de aprendizado não supervisionado para obter representações vetoriais para palavras. Utilizado para semelhança entre palavras.
-  - `(spacy) Doc.similarity(p2)` 
+  - `(spacy) Doc.similarity(p2)`
+- **Levenshtein (edition) Distance**: Número mínimo de operações necessárias para transformar uma string em outra
+  - `from nltk.metrics.distance import edit_distance`
+- **N-Grams**: Métrica usada para comparar sequências de texto, como palavras ou frases, com base em n-gramas (tokens). Um n-grama é uma subsequência de n itens de uma dada sequência.
+  - `nltk.bigrams`, `nltk.trigrams`, ... 
+- **Jaccard Distance**: Métrica usada para calcular a dissimilaridade entre dois conjuntos.
+  - `from nltk.metrics.distance import jaccard_distance`
